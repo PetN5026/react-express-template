@@ -4,7 +4,11 @@ import Button from "./Components/button";
 const Index = () => {
   return (
     <div>
-      WELCOME TO REACT APP!
+      <p className="text-3xl font-bold underline text-red-500">
+        {" "}
+        WELCOME TO REACT APP!
+      </p>
+
       <Button type={"text"} />
     </div>
   );
