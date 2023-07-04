@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <div>
       WELCOME TO REACT APP!
-      <Button />
+      <Button type={"text"} />
     </div>
   );
 };

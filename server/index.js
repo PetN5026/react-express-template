@@ -1,14 +1,13 @@
 const express = require("express");
+const connectDB = require("./db/index");
 const path = require("path"); // NEW
-// const api = require("./api");
 const app = express();
 const port = process.env.PORT || 3000;
 const DIST_DIR = path.join(__dirname, "../dist"); // NEW
 const HTML_FILE = path.join(DIST_DIR, "index.html"); // NEW
-const mockResponse = {
-  foo: "bar",
-  bar: "foo",
-};
+require("dotenv").config();
+connectDB();
+
 app.use(express.static(DIST_DIR)); // NEW
 app.use("/api", require("./api"));
 app.get("/", (req, res) => {

@@ -1,9 +1,15 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({ type }) => {
   return (
     <div>
-      <button>Test</button>
+      <button
+        onClick={() => {
+          console.log("clicked");
+        }}
+      >
+        test
+      </button>
     </div>
   );
 };
