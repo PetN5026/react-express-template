@@ -8,7 +8,7 @@ const Button = ({ type }) => {
           console.log("clicked");
         }}
       >
-        test
+        {type}
       </button>
     </div>
   );

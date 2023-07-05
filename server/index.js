@@ -16,3 +16,7 @@ app.get("/", (req, res) => {
 app.listen(port, function () {
   console.log("App listening on port: " + port);
 });
+
+app.get("*", (req, res) => {
+  res.sendFile(HTML_FILE); // EDIT
+});
